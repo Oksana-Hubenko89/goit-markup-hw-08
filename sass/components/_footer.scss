@@ -1,0 +1,62 @@
+/*Footer*/
+.icon-social-footer {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.social-link-footer {
+  height: 44px;
+  width: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $primary-white-color;
+  background-color: $fone-social-footer;
+  border-radius: 50%;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    border-radius: 50%;
+  }
+}
+
+.icon-button {
+  width: 24px;
+}
+.page-footer.container {
+  /*align-items: baseline;*/
+  align-items: center;
+}
+.page-footer {
+  color: $primary-white-color;
+  background: $background-footer;
+}
+address {
+  font-style: normal;
+}
+.logo-footer {
+  margin-bottom: 10px;
+  display: block;
+}
+.page-footer > .container.flex-container {
+  padding-top: 51px;
+  padding-bottom: 69px;
+
+  justify-content: space-between;
+  align-items: baseline;
+}
+.icon-button {
+  fill: $primary-white-color;
+  margin-left: 10px;
+}
+
+.contact-footer {
+  color: $text-adress-footer;
+  margin-top: 9px;
+}
+.footer-block {
+  justify-content: right;
+}

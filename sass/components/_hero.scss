@@ -1,0 +1,32 @@
+/*Hero*/
+
+.hero {
+  display: flex;
+  justify-content: center;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, $hero-fone, $hero-fone),
+    url("../image/фон.jpg");
+  background-color: $hero-fone;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+  margin: auto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $primary-white-color;
+
+  &-fone {
+    display: block;
+    text-align: center;
+  }
+  &-title button {
+    display: block;
+    justify-content: center;
+  }
+}

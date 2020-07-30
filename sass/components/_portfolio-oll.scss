@@ -1,0 +1,82 @@
+/*Портфолио*/
+.filtr-oll {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: -15px;
+}
+.oll {
+  display: block;
+  width: 370px;
+  height: 404px;
+  margin: 15px;
+  border: 1px solid $border-portfolio;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 1px 4px 6px $shadow-four, 0px 4px 4px $shadow-five,
+      0px 1px 1px $shadow-three;
+  }
+  &-image {
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+.oll-overlay {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 370px;
+  height: 294px;
+  background-color: $background-text-card;
+  transform: translateY(100%);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+
+  .oll:hover & {
+    transform: translateY(-0.5%);
+    opacity: 1;
+  }
+}
+
+.section-portfolio {
+  border-top: 1px solid $border-portfolio-line;
+  background-color: $primary-white-color;
+}
+.card-portfolio {
+  display: block;
+  padding: 20px 24px;
+}
+.text-card {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  padding: 63px 24px;
+  color: $primary-white-color;
+}
+
+.filtr {
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filtr > .item-filtr:not(:last-child) {
+  margin-right: 8px;
+}
+
+.hero-text-card {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $text-title-button-secondary;
+}
+.p-card {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  color: $text-body-color;
+}

@@ -1,0 +1,15 @@
+.primory-fone {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    background-color: $hero-fone;
+  }
+}
+.else-color-hero {
+  color: $text-title-button-secondary;
+}
