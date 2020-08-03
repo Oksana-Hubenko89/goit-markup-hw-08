@@ -1,26 +1,26 @@
-/*Форма в Hero*/
-.hero-form {
-  display: block;
-  margin: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding-top: 33px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 47px;
-}
-
+///
+///
+////*
+//.hero-form {
+///  display: block;
+///  margin: 0;
+//position: relative;
+///  top: 0;
+///  left: 0;
+//width: 450px;
+//height: 609px;
+///  padding: 40px;
+//}
+///
 .form-caption {
   display: inline-block;
-  margin-bottom: 30px;
+  margin-bottom: 42px;
   font-weight: bold;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
+  color: $text-title-button-secondary;
 }
 .form-field {
   display: block;
@@ -182,23 +182,32 @@ textarea {
     font-style: underline;
   }
 }
-
-/*Форма в Footer*/
-
-.footer-form .flex-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.close-form:hover,
+.close-form:focus {
+  fill: $accent-color;
 }
+
+///Форма в Footer//
+///
+//.footer-form .flex-container {
+//  display: flex;
+//  justify-content: space-between;
+//  align-items: center;
+//}
 .footer-form {
   display: block;
-  width: 570px;
+  width: 450px;
+  @media screen and (min-width: $desktop) {
+    width: 358px;
+    margin-right: 212px;
+  }
 }
+
 .footer-input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   margin: 0;
-  margin-right: 12px;
+  margin-bottom: 20px;
   font: inherit;
   padding-left: 16px;
   background-color: $background-footer;

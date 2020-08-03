@@ -1,15 +1,42 @@
-.primory-fone {
+.our-work {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+.our-work-set {
+  margin: -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.our-work .our-work__item {
   position: relative;
-
   &::before {
     content: "";
     position: absolute;
     bottom: 0;
-    width: 370px;
-    height: 70px;
     background-color: $hero-fone;
+    width:370px;
+    height: 70px;
   }
+  display: block;
+  color: $primary-white-color;  
+  margin:15px;
 }
-.else-color-hero {
-  color: $text-title-button-secondary;
+
+.hero-three-else {
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  color: $primary-white-color;
+  position: absolute;
+  left: 5px;
+  top: 251px;
+  width: 100%;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }

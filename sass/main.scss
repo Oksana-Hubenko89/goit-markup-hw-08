@@ -1,16 +1,23 @@
 @import "./utils/variables";
-@import "./base/normalize";
+@import "./utils/normalize";
 @import "./utils/mixins";
 @import "./utils/placeholders";
-@import "./components/modal-box";
+@import "./utils/breakpoints";
 @import "./utils/general-style";
+
+@import "./components/container";
+@import "./components/section";
 @import "./components/page-header";
-@import "./components/logo";
+@import "./components/page-footer";
+@import "./components/modal";
+
+@import "./components/company-logo";
 @import "./components/hero";
 @import "./components/button";
-@import "./components/page-studio";
+@import "./components/forms";
+@import "./components/advantages";
 @import "./components/our-work";
+@import "./components/card-content";
 @import "./components/friends";
 @import "./components/clients";
-@import "./components/footer";
-@import "./components/forms";
+@import "./components/portfolio-oll";

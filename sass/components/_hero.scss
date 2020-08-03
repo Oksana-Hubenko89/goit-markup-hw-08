@@ -1,26 +1,4 @@
-/*Hero*/
-
 .hero {
-  display: flex;
-  justify-content: center;
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to right, $hero-fone, $hero-fone),
-    url("../image/фон.jpg");
-  background-color: $hero-fone;
-  background-repeat: no-repeat;
-  background-position: center;
-  align-items: center;
-  margin: auto;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: $primary-white-color;
-
   &-fone {
     display: block;
     text-align: center;
@@ -28,5 +6,77 @@
   &-title button {
     display: block;
     justify-content: center;
+  }
+
+  &-title {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $primary-white-color;
+    text-align: center;
+
+    @media screen and (min-width: $desktop) {
+      font-size: 44px;
+      line-height: 1.36;
+    }
+  }
+ 
+
+}
+.hero-fone {
+  
+  background-image: linear-gradient(to right, $hero-fone, $hero-fone),
+  url("../image/фон@x.jpg");
+  background-position: 50% 50%;
+  background-size:cover;
+  margin: 0;
+  min-width: 480px;
+  min-height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-repeat: no-repeat;   
+
+  
+  @media screen and (min-width: $tablet){
+
+    padding-top: 118px;
+    padding-bottom: 118px;
+  } 
+   
+  
+  @media screen and (min-width: $desktop){
+    width: 1600px;
+    height: 600px;       
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    
+      }
+
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  
+    .hero-fone{ 
+      background-image:linear-gradient(to right, $hero-fone, $hero-fone),
+    url("../image/фон@2x.jpg");
+  }
+}
+
+    
+
+
+    @media screen and (min-device-pixel-ratio: 3),
+  screen and (min-resolution: 3dppx),
+  screen and (min-resolution: 288dpi) {
+    .hero-fone{ 
+    background-image:linear-gradient(to right, $hero-fone, $hero-fone), url("../image/фон@3x.jpg");
   }
 }

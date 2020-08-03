@@ -1,4 +1,11 @@
 /*Кнопки*/
+.button-secondary,
+.button-primary,
+.button-footer,
+.button-form {
+  @extend %button;
+}
+
 .button-form-close {
   display: flex;
   position: absolute;
@@ -6,16 +13,18 @@
   justify-content: center;
   top: 0;
   right: 0;
-  width: 30px;
-  height: 30px;
   border-radius: 50%;
-  margin-right: 8px;
-  margin-top: 1px;
   background: $primary-white-color;
   border: 1px solid $button-form-close-border;
   box-sizing: border-box;
+  margin-right: 8px;
+  margin-top: 8px;
+  width: 30px;
+  height: 30px;
 }
-.buttom-header {
+.buttom-header,
+.button-form,
+.button-footer {
   margin-left: auto;
   margin-right: auto;
 }
@@ -29,6 +38,14 @@
   font-weight: 700;
   border: none;
   line-height: 1.9;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    background-color: $form-input-border-color;
+    border: 2px solid $accent-color;
+  }
 }
 
 .button-primary {
@@ -38,6 +55,12 @@
 
 .button-footer {
   padding: 10px 28px;
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    margin-left: 12px;
+  }
 }
 .button-secondary {
   padding: 6px 22px;
@@ -59,10 +82,5 @@
   width: 200px;
   height: 50px;
   box-shadow: 0px 4px 4px $button-form-box-shadow-color;
-  font-weight: bold;
-  border: none;
-  line-height: 1.9;
-  margin-left: auto;
-  margin-right: auto;
   cursor: pointer;
 }

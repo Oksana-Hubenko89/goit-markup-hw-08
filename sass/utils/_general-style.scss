@@ -1,62 +1,72 @@
-/*Общее проект*/
+/*Общее*/
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-default;
+  color: $text-body-color;
+  cursor: pointer;
+}
+body.modal-open {
+  overflow: hidden;
+}
+
 html {
   box-sizing: border-box;
 }
 .invisible {
   display: none;
 }
-body {
-  font-family: $font-default;
-  cursor: pointer;
-}
+
 img {
   display: block;
   max-width: 100%;
-  height: auto;
-  margin-right: 0px;
-}
-.list,
-a {
-  text-decoration: none;
-}
-.list,
-p {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-ul {
-  list-style-type: none;
-}
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.flex-container {
-  display: flex;
-}
-.flex-element {
-  width: 270px;
-  align-items: center;
-  text-align: center;
-}
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.not-paddig-bottom {
-  padding-bottom: 0px;
-}
-.link {
-  display: block;
+  height: auto;  
 }
 
-link > .button-secondary {
+.icon-social {
+  
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.social-icon > .item-social:not(:last-child) {
+  margin-right: 10px;
+}
+
+//.list a {
+//  text-decoration: none;
+//}
+//.list,
+//p {
+//  margin: 0;
+//  padding: 0;
+//  list-style: none;
+//}
+//ul {
+//  list-style-type: none;
+//}
+//
+//.not-paddig-bottom {
+//  padding-bottom: 0px;
+//}
+//.link {
+// display: block;
+//}
+//////
+//link > .button-secondary {
+//  text-decoration: none;
+//}
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
   text-decoration: none;
 }
+
 h1,
 h2,
 h3,
@@ -65,49 +75,36 @@ h5,
 h6 {
   margin-top: 0;
 }
-.active::after {
-  content: " ";
-  display: inline-block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 4px;
-  background-color: $accent-color;
-  border-radius: 2px;
-}
-main {
-  letter-spacing: 0.03em;
-}
-.section .item:not(:last-child) {
-  margin-right: 30px;
-}
-/*Общие заголовки Студия*/
 
+//main {
+//  letter-spacing: 0.03em;
+//  background-color: green;
+//}
+//
+///*Общие заголовки Студия*/
+///*
 .hero-two {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
   text-align: center;
   color: $text-title-button-secondary;
 }
-
+//
 .hero-three {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14px;
-  text-transform: uppercase;
+  color: $text-title-button-secondary;
 }
 
-.hero-three-else {
-  display: inline-block;
-  text-align: center;
-  margin: 0;
-  padding-top: 35px;
-  padding-bottom: 35px;
-  color: $primary-white-color;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
+//
+//
+//
+//  &-start {
+//    width: 70px;
+//    height: 70px;
+//  }
+//  &-cart {
+//    height: 162px;
+//    background: $primary-white-color;
+//    padding-left: 0px;
+//  }
+//}
+//
