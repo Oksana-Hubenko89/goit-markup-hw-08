@@ -359,6 +359,7 @@ h6 {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
 @media screen and (min-width: 480px) {
@@ -1436,6 +1437,8 @@ textarea {
   display: block;
   color: #ffffff;
   margin: 15px;
+  width: 370px;
+  height: 294px;
 }
 
 .our-work .our-work__item::before {
@@ -1481,13 +1484,12 @@ textarea {
 
 .friends__item {
   text-align: center;
-  display: inline-block;
-  width: 450px;
-  height: 482px;
+  display: block;
+  height: auto;
 }
 
 @media screen and (max-width: 767px) {
-  .friends .friends__item:not(:last-child) {
+  .friends__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -1503,7 +1505,6 @@ textarea {
 @media screen and (min-width: 1200px) {
   .friends__item {
     width: 270px;
-    height: 422px;
   }
 }
 
@@ -1665,6 +1666,10 @@ textarea {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    justify-self: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: -15px;
   }
 }
@@ -1713,16 +1718,16 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .oll__item {
-    -ms-flex-preferred-size: calc((100%-2*30)/2);
-        flex-basis: calc((100%-2*30)/2);
+    -ms-flex-preferred-size: calc((92%-2*30)/2);
+        flex-basis: calc((92%-2*30)/2);
     margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .oll__item {
-    -ms-flex-preferred-size: calc((100%-3*30)/3);
-        flex-basis: calc((100%-3*30)/3);
+    -ms-flex-preferred-size: calc((92%-3*30)/3);
+        flex-basis: calc((92%-3*30)/3);
   }
 }
 
